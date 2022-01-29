@@ -1,0 +1,106 @@
+body { 
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Red Hat Display', sans-serif;
+}
+p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+.conteudo{
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    text-align: center;
+}
+.cardLayout{
+    border-radius: 5%;
+    width: 25rem;
+    height: auto;
+}
+.PlanSpace{
+    display:flex;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.row .PlanSpace a{
+    color: hsl(223, 78%, 51%);
+    font-size: small;
+}
+.row .PlanSpace a:hover{
+    color: hsl(245, 75%, 65%);
+    font-size: small;
+}
+.proceedButton{
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 0ch;
+}
+.proceedButton:hover{
+    background-color:  hsl(245, 75%, 65%);
+}
+.cancelLink{
+    color: hsl(224, 23%, 55%);
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    font-weight: 700;
+}
+.cancelLink:hover{
+    color:  hsl(223, 47%, 23%);
+}
+.card-body h5{
+    font-size: x-large;
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    .PlanSpace{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .card-body h5{
+        font-size: large;
+    }
+    p{
+        font-size: 13px;
+    }
+    .PlanSpace img {
+        width: auto;
+        height: 30px;
+    }
+    .PlanSpace{
+        font-size: 10px;
+    }
+    .PlanSpace b{
+        font-size: 10px;
+    }
+    .proceedButton{
+        font-size: small;
+    }
+    .cancelLink{
+        font-size: small;
+    }
+
+}
