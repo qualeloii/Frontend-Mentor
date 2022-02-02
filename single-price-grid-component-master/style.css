@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Karla';
+    src: url("karla.ttf");
+}
+:root{
+    --cyanColor: hsl(179, 62%, 43%);
+    --cyan--light: #6CD9D8;
+    --Bright--yellow: hsl(71, 73%, 54%);
+    --Drken-yellow: hsl(71, 50%, 54%);
+    --light--gray: hsl(204, 43%, 93%);
+    --grayish--blue: hsl(218, 22%, 67%);
+} 
+body{
+    font-family: Karla;
+    background-color: #E6EFF6;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--cyanColor);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+}
+/* Main Div*/
+.mainContent{
+    margin-top: 19vh;
+    margin-bottom: 19vh;
+}
+.Content{
+    max-width: 600px;
+    margin: auto;
+}
+/* First Row Content*/ 
+.upContent{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.col-12 h2{
+    color: var(--Bright--yellow);
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.col-12 p{
+    color: var(--grayish--blue);
+    font-weight: 600;
+    padding-bottom: 25px;
+    font-size: 15px;
+    opacity: 50%;
+}
+/* Second Row First Column Content*/ 
+.leftContent{
+    color: white;
+    background-color: var(--cyanColor);
+    border-bottom-left-radius: 10px;
+}
+.leftContent h2{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+}
+.leftContent h3{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 25px;
+}
+.leftContent p{
+    margin-left: 25px;
+}
+small{
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 55%;
+}
+.signUpButton{
+    color: white;
+    font-weight: 700;
+    background-color: var(--Bright--yellow);
+    border: none;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.signUpButton:hover{
+    color: white;
+    font-weight: 700;
+    background-color: var(--Drken-yellow);
+}
+/* Second Row Second Column Content*/ 
+.rightContent{
+    color: white;
+    background-color: var(--cyan--light);
+    border-bottom-right-radius: 10px;
+}
+.rightContent h2{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+}
+.rightContent a{
+    margin-left: 25px;
+    opacity: 60%;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 450px){
+    .mainContent{
+        margin-top: 5vh;
+        margin-bottom: 6vh;
+    }
+   .container .row{
+       display: block;
+   }
+   .leftContent{
+       padding-bottom: 1rem;
+       border-bottom-left-radius: 0px;
+    }
+    .upContent{
+        padding-bottom: 1rem;
+    }
+    .rightContent{
+        padding-bottom: 1rem;
+    }
+
+}
